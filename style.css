@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+@-webkit-keyframes bg-scrolling-reverse {
+100% {
+background-position: 50px 50px;
+}
+}
+@-moz-keyframes bg-scrolling-reverse {
+100% {
+background-position: 50px 50px;
+}
+}
+@-o-keyframes bg-scrolling-reverse {
+100% {
+background-position: 50px 50px;
+}
+}
+@keyframes bg-scrolling-reverse {
+100% {
+background-position: 50px 50px;
+}
+}
+@-webkit-keyframes bg-scrolling {
+0% {
+background-position: 50px 50px;
+}
+}
+@-moz-keyframes bg-scrolling {
+0% {
+background-position: 50px 50px;
+}
+}
+@-o-keyframes bg-scrolling {
+0% {
+background-position: 50px 50px;
+}
+}
+@keyframes bg-scrolling {
+0% {
+background-position: 50px 50px;
+}
+}
+
+body {
+margin-top: 13.5rem;
+color: #999;
+font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+text-align: center;
+
+background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+-webkit-animation: bg-scrolling-reverse 0.92s infinite;
+
+-moz-animation: bg-scrolling-reverse 0.92s infinite;
+
+-o-animation: bg-scrolling-reverse 0.92s infinite;
+
+animation: bg-scrolling-reverse 0.92s infinite;
+
+-webkit-animation-timing-function: linear;
+-moz-animation-timing-function: linear;
+-o-animation-timing-function: linear;
+animation-timing-function: linear;
+}
+
+table {
+    text-align: center;
+    border: 1px solid black;
+}
+tr{
+    text-align: center;
+    border: 1px solid black;
+}
+th{
+    text-align: center;
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+caption{
+    font-size: larger;
+    
+}
+table {
+    height: 400px;
+    width: 600px;
+    position: fixed;
+    top: 30%;
+    left: 43%;
+    margin-top: -100px;
+    margin-left: -200px;
+} 
+
+.tooltip {
+    position: relative;
+    
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+caption {
+    color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    font-size: 200%;
+    animation-iteration-count:infinite;
+  }
+
+  @keyframes example {
+    0%   {color:red; left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:blue; left:200px; top:200px;}
+  75%  {color:green; left:0px; top:200px;}
+  100% {color:red; left:0px; top:0px;}
+  }
+
+*{
+  color: blue;
+}
+
+
+
+  
